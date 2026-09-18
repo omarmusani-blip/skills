@@ -50,21 +50,49 @@ keep a task file by hand is that it requires mental use. What moves to the assis
 typing. The interview deliberately asks its questions before presenting any options, because
 a question with candidate answers attached is a menu, and you'd just pick from it.
 
+## Will this work for you?
+
+This was built for my own setup and published because the shape of it might be useful to
+someone, not because it's a general-purpose tool. Whether it fits you comes down to one thing.
+
+**Required: a single authoritative list of what's live.** One place that says what your current
+threads are and what the next step is on each. Mine is a table in a notes file; a plain
+`projects.md` with eight lines would work just as well. The format doesn't matter — having
+exactly one of them does.
+
+This is load-bearing, and it's worth being blunt about why. Clock-in's most useful move is
+showing you what's live that you *didn't* mention. With no authoritative list there's nothing to
+check your answers against, and the skill quietly degrades into a generic interview while still
+sounding like it knows what you're neglecting. That is worse than not running it at all.
+
+So: four hundred beautifully linked notes and no such list — this won't work for you. One
+scruffy text file naming your live threads — it will.
+
+**Optional. Each one buys something specific:**
+
+| Signal | What it buys | Without it |
+|---|---|---|
+| Deadline dates on projects | Real arithmetic about what's actually urgent | You state deadlines in the interview |
+| A timetable or calendar file | Honest working hours instead of fantasy ones | Clock-in asks what's fixed today |
+| Recent file activity | The divergence check — the board says X, your week says Y | No divergence check; the interview carries it alone |
+
+`references/context.example.md` is the full specification of what gets read and in what order of
+authority. Skimming it is the fastest way to tell whether this fits your setup.
+
+It was built against an Obsidian vault, and the example config includes Obsidian specifics (open
+tabs live in `.obsidian/workspace.json`), but nothing in the skill requires Obsidian.
+
 ## Install
 
 ```bash
-git clone https://github.com/<you>/clock-in.git ~/.claude/skills/clock-in
+git clone https://github.com/omarmusani-blip/clock-in.git ~/.claude/skills/clock-in
 cd ~/.claude/skills/clock-in
 cp references/context.example.md references/context.md
 ```
 
 Then fill in `references/context.md` — where your task file lives, what your sources of truth
-are, and where your work happens. The skill reads it at every clock-in and has nothing to
-work from without it. It's gitignored, since it holds real paths and project names.
-
-Works with any notes setup. It was built against an Obsidian vault, and `context.example.md`
-includes the Obsidian specifics (open tabs live in `.obsidian/workspace.json`), but nothing
-in the skill requires Obsidian.
+are, and where your work happens. The skill reads it at every clock-in and has nothing to work
+from without it. It's gitignored, since it holds real paths and project names.
 
 ## Use
 
@@ -90,4 +118,4 @@ is to rework it or delete it.
 
 ## Licence
 
-MIT.
+MIT — see [LICENSE](LICENSE).

@@ -35,6 +35,21 @@ The specific failure to avoid: becoming another thing talking at them. A ritual 
 like overhead gets skipped, and a skipped ritual is worse than none, because it carries a
 small reproach each time it is ignored.
 
+## Dry runs
+
+If the user says this is a test — validating the skill, trying it out, checking what it
+does — **run everything and write nothing.** Do the reading, ask the questions, produce the
+plan or the reckoning in full, then say plainly what *would* have been written and where.
+
+This matters more than it looks. A clock-out records into a log that is never cleared, and
+that log is the only evidence of whether this skill helps. Filling it with test runs corrupts
+the one measurement there is, and does it invisibly — the entries look exactly like real days.
+The same goes for a test clock-in overwriting a real plan that is still live.
+
+When in doubt about whether a run is real, ask. It costs one line, and the cost of guessing
+wrong is asymmetric: a real day not recorded can be written up afterwards, a corrupted log
+cannot be cleaned.
+
 ## Offering it
 
 Check whether the dated heading in their task file matches today's date. If it doesn't, offer
@@ -64,6 +79,12 @@ their name. Their thinking has to set the frame; yours catches what it missed.
 **1. Say how much day is left.** Working hours remaining, out loud, before anything is
 picked. At 09:00 four items is reasonable; at 17:00 it is fantasy, and this should be the
 thing that says so. Subtract known commitments, and be honest about time already spent.
+
+**Read the clock — never estimate it, and never round a reading you already took.** The
+current time is one command away, and every number in the plan is derived from it. A guess
+here is the same class of error as reporting on a document you didn't compile: a checkable
+fact, asserted instead of checked. It also destroys trust in the arithmetic that follows,
+because the user knows what time it is even when you don't.
 
 **2. Ask what's fixed.** Anything today that your sources don't know about? Timetables,
 deadlines and meetings can be read, but plans get made by text message.
@@ -133,7 +154,10 @@ For genuinely straightforward tasks, several confident gates up front are fine.
 
 ## Clock out
 
-Short. Record what happened, and ask **one** question, only when there is one worth asking:
+Short. Check the actual time first, for the same reason as at clock-in. Then record what
+happened — **asking what happened rather than inferring it**, since most of a day is
+invisible from inside one session — and ask **one** question, only when there is one worth
+asking:
 
 > What did today teach you about the plan?
 
