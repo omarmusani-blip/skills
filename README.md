@@ -106,6 +106,11 @@ deadline arithmetic, no "you haven't." Drift facts belong inside the interview, 
 input to a decision you're making — not at the door, where they land as a verdict on one
 you're declining.
 
+Say `hand over` when a session is ending but your day isn't — context runs out long before the
+work does. It appends a one-line state note (done / in flight / next) under today's plan and
+touches nothing else, so the next session picks up mid-stride instead of reading a stale morning
+plan. It is deliberately not a clock-out: the day gets reckoned once, at the end.
+
 There's no escalation. If you ignore it for two weeks, it has failed, and the honest response
 is to rework it or delete it.
 

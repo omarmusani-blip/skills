@@ -1,6 +1,6 @@
 ---
 name: clock-in
-description: Bookends a working day — a short interview that produces a plan at the start (clock in), and a short reckoning that records what came of it at the end (clock out). Use this whenever the user says "clock in" or "clock out", asks what they should work on today, asks for a plan or a shape for the day, wonders what's live or what they're drifting from, or starts a working session without having planned one. Offer it proactively at the start of the first session of a day when the dated heading in their task file is not today's date — a planning ritual that nothing fires is the problem this exists to solve.
+description: Bookends a working day — a short interview that produces a plan at the start (clock in), and a short reckoning that records what came of it at the end (clock out). Use this whenever the user says "clock in" or "clock out", asks what they should work on today, asks for a plan or a shape for the day, wonders what's live or what they're drifting from, or starts a working session without having planned one. Also use it when the user says "hand over", says they are about to start a fresh session, or is wrapping up a session while the working day continues — that is a hand-over, not a clock-out. Offer it proactively at the start of the first session of a day when the dated heading in their task file is not today's date — a planning ritual that nothing fires is the problem this exists to solve.
 ---
 
 # Clock in
@@ -151,6 +151,31 @@ session. For solo items, they revise it themselves or it waits for clock-out. Do
 a mid-day check-in to catch this; the quiet day is deliberate.
 
 For genuinely straightforward tasks, several confident gates up front are fine.
+
+## Handing over mid-day
+
+A day usually spans several sessions — context runs out long before the work does. The plan
+survives that boundary because it lives in a file; **the reasoning does not.** Revised gates,
+swapped items, what actually got finished and what the work taught them exist only in the
+session that is about to end.
+
+So there is a third verb. When the user says **hand over** — or says they are about to start a
+fresh session while the day is still running — append a short state line under the dated
+heading, and stop:
+
+> *Handed over 14:20 — items 1 and 2 done; gate on 2 revised (the file already existed, so the
+> gate became "first new function signature"). In flight: the install, nothing written yet.
+> Next: finish it, then sport.*
+
+Three things, no more: what is done, what is in flight, what is next.
+
+**This is not a clock-out.** Don't touch the week's record or the accumulating log, don't ask
+the clock-out question, and don't write a reckoning. The day is still running, and a day
+reckoned twice is a day recorded wrong. The next session reads the dated section and picks up
+mid-stride.
+
+**The user triggers this, not you.** They can see a context limit approaching; you generally
+cannot. Offering to hand over on a hunch is exactly the overhead this skill must not become.
 
 ## Clock out
 

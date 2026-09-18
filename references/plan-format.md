@@ -57,6 +57,19 @@ kinds of losing, and swapping intelligently is only possible if you can see whic
 The bench is also the structural guard against this becoming Claude's plan that they
 rubber-stamp. Winners only mean something when the losers are on the page.
 
+## Hand over
+
+One italic line appended under the dated heading when a session ends but the day does not.
+Never a rewrite of the plan, and never an entry in the accumulating log — see the hand-over
+section in `SKILL.md` for why.
+
+```markdown
+*Handed over 14:20 — items 1 and 2 done; gate on 2 revised. In flight: the install, nothing
+written yet. Next: finish it, then sport.*
+```
+
+Several in a day is fine. They read as a trail, which is what the next session needs.
+
 ## Clock out
 
 Append one line per item, honest about partials:
