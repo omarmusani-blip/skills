@@ -65,9 +65,6 @@ showing you what's live that you *didn't* mention. With no authoritative list th
 check your answers against, and the skill quietly degrades into a generic interview while still
 sounding like it knows what you're neglecting. That is worse than not running it at all.
 
-So: four hundred beautifully linked notes and no such list — this won't work for you. One
-scruffy text file naming your live threads — it will.
-
 **Optional. Each one buys something specific:**
 
 | Signal | What it buys | Without it |
@@ -78,6 +75,10 @@ scruffy text file naming your live threads — it will.
 
 `references/context.example.md` is the full specification of what gets read and in what order of
 authority. Skimming it is the fastest way to tell whether this fits your setup.
+
+If you'd rather see a working example than a specification: I'm packaging the structure of my own
+vault — the board, the conventions, and the reasoning behind them — as a companion repo under
+[github.com/omarmusani-blip](https://github.com/omarmusani-blip). It'll be linked here once it's up.
 
 It was built against an Obsidian vault, and the example config includes Obsidian specifics (open
 tabs live in `.obsidian/workspace.json`), but nothing in the skill requires Obsidian.
