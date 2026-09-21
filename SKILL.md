@@ -86,8 +86,26 @@ here is the same class of error as reporting on a document you didn't compile: a
 fact, asserted instead of checked. It also destroys trust in the arithmetic that follows,
 because the user knows what time it is even when you don't.
 
-**2. Ask what's fixed.** Anything today that your sources don't know about? Timetables,
-deadlines and meetings can be read, but plans get made by text message.
+**2. Read the dated commitments, then ask what's missing.** Two halves, and the order
+matters — read first, ask second.
+
+**Read** whatever dated machinery the context file names: the timetable, meetings, and above all
+**anything with a deadline attached**. Surface anything close enough to matter *before* the
+interview, as a plain fact with its date and the days remaining. A deadline is not a candidate
+you are ranking and not a drift verdict — it is the same kind of fact as a meeting at 3pm, and
+it belongs with the other fixed things.
+
+Say it once, flatly: *"Three days: the Aston Martin placement closes Thursday."* Then stop.
+Whether it earns a slot today is their call in step 5, not yours here.
+
+**Then ask** what the sources cannot know: *anything fixed today they don't know about?*
+Timetables, deadlines and meetings can be read, but plans get made by text message.
+
+> **Why this is a read and not a question.** Asking *"any deadlines coming up?"* only returns what
+> they already have in mind — which is exactly what a tracker exists to stop depending on. If a
+> deadline lives in a file and still has to be remembered to be surfaced, the file is doing
+> nothing. *(Added 2026-09-21, after a clock-in that skipped a deadline three days out because
+> the skill mentioned deadlines in its context file but never required reading them.)*
 
 **3. Interview — before showing any candidates.** Two or three real questions, and wait for
 the answers:
