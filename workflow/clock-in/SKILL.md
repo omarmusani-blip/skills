@@ -1,0 +1,230 @@
+---
+name: clock-in
+description: Bookends a working day — a short interview that produces a plan at the start (clock in), and a short reckoning that records what came of it at the end (clock out). Use this whenever the user says "clock in" or "clock out", asks what they should work on today, asks for a plan or a shape for the day, wonders what's live or what they're drifting from, or starts a working session without having planned one. Also use it when the user says "hand over", says they are about to start a fresh session, or is wrapping up a session while the working day continues — that is a hand-over, not a clock-out. Offer it proactively at the start of the first session of a day when the dated heading in their task file is not today's date — a planning ritual that nothing fires is the problem this exists to solve.
+---
+
+# Clock in
+
+A working day gets two bookends: a short interview that produces a plan, and a short
+reckoning that records what came of it. Nothing in between.
+
+Read `references/context.md` first — it holds the user's file paths, their sources of truth,
+and anything specific to how they work. Without it this skill has nothing to read from.
+If it doesn't exist, copy `references/context.example.md` and fill it in with the user.
+
+## What this is actually fixing
+
+Most people who need this already have a planning ritual written down somewhere, and it is
+usually a good one. It goes unused because **nothing fires it**. A note cannot interrupt you;
+a written ritual bets on habit, and that bet loses more often than not.
+
+Claude Code is something the user already opens. That is the whole mechanism here — not
+better planning advice, just a ritual attached to something that already happens.
+
+The job is **sequencing and commitment**, not productivity. Someone reaching for this usually
+has more live threads than days, and picks between them by interest rather than by cost. The
+plan's purpose is to make that choice deliberate and visible, not to extract more hours.
+
+## The governing principle
+
+Every intervention costs something. This runs twice a day and is silent the rest of the
+time — that silence is a design decision, not an omission. If an intervention is not clearly
+worth the interruption, don't make it.
+
+The specific failure to avoid: becoming another thing talking at them. A ritual that feels
+like overhead gets skipped, and a skipped ritual is worse than none, because it carries a
+small reproach each time it is ignored.
+
+## Dry runs
+
+If the user says this is a test — validating the skill, trying it out, checking what it
+does — **run everything and write nothing.** Do the reading, ask the questions, produce the
+plan or the reckoning in full, then say plainly what *would* have been written and where.
+
+This matters more than it looks. A clock-out records into a log that is never cleared, and
+that log is the only evidence of whether this skill helps. Filling it with test runs corrupts
+the one measurement there is, and does it invisibly — the entries look exactly like real days.
+The same goes for a test clock-in overwriting a real plan that is still live.
+
+When in doubt about whether a run is real, ask. It costs one line, and the cost of guessing
+wrong is asymmetric: a real day not recorded can be written up afterwards, a corrupted log
+cannot be cleaned.
+
+## Offering it
+
+Check whether the dated heading in their task file matches today's date. If it doesn't, offer
+once, at the start of the session, and keep the offer plain:
+
+> Clock in? Last clock-in: 12 Sept.
+
+That bare date is the whole offer. **No thread names, no deadline arithmetic, no "you
+haven't."** Drift facts belong inside the interview, where they are input to a decision being
+made — not at the door, where they land as a verdict on one being declined. Being told what
+you are neglecting at the moment you say "not today" is how a tool becomes the thing you
+avoid.
+
+If they decline, drop it for that session. Don't re-offer, don't hint.
+
+There is **no escalation mechanism**, deliberately. If this is being ignored for a week or
+two, it has failed, and the honest response is to rework or kill it — which is the user's
+call. Building machinery to push harder would mean deciding, unilaterally, that someone needs
+discipline. That isn't this skill's job.
+
+## Clock in
+
+**The order matters more than any individual step.** The failure mode is arriving with a
+ranked list of what they should do — they then pick from it, and the plan is yours wearing
+their name. Their thinking has to set the frame; yours catches what it missed.
+
+**1. Say how much day is left.** Working hours remaining, out loud, before anything is
+picked. At 09:00 four items is reasonable; at 17:00 it is fantasy, and this should be the
+thing that says so. Subtract known commitments, and be honest about time already spent.
+
+**Read the clock — never estimate it, and never round a reading you already took.** The
+current time is one command away, and every number in the plan is derived from it. A guess
+here is the same class of error as reporting on a document you didn't compile: a checkable
+fact, asserted instead of checked. It also destroys trust in the arithmetic that follows,
+because the user knows what time it is even when you don't.
+
+**2. Read the dated commitments, then ask what's missing.** Two halves, and the order
+matters — read first, ask second.
+
+**Read** whatever dated machinery the context file names: the timetable, meetings, and above all
+**anything with a deadline attached**. Surface anything close enough to matter *before* the
+interview, as a plain fact with its date and the days remaining. A deadline is not a candidate
+you are ranking and not a drift verdict — it is the same kind of fact as a meeting at 3pm, and
+it belongs with the other fixed things.
+
+Say it once, flatly: *"Three days: the Aston Martin placement closes Thursday."* Then stop.
+Whether it earns a slot today is their call in step 5, not yours here.
+
+**Then ask** what the sources cannot know: *anything fixed today they don't know about?*
+Timetables, deadlines and meetings can be read, but plans get made by text message.
+
+> **Why this is a read and not a question.** Asking *"any deadlines coming up?"* only returns what
+> they already have in mind — which is exactly what a tracker exists to stop depending on. If a
+> deadline lives in a file and still has to be remembered to be surfaced, the file is doing
+> nothing. *(Added 2026-09-21, after a clock-in that skipped a deadline three days out because
+> the skill mentioned deadlines in its context file but never required reading them.)*
+
+**3. Interview — before showing any candidates.** Two or three real questions, and wait for
+the answers:
+
+> What would make today not wasted?
+> Is anything blocked on someone else?
+> Anything you've been avoiding?
+
+These are doing real work. The first surfaces their actual priority, which is often not the
+most urgent thing on any list. The second catches dependencies before a day is planned around
+one. The third is the one they will answer honestly if asked plainly and not followed up on —
+and avoidance is usually where the important thing is hiding.
+
+Don't supply candidate answers. A question with options attached is a menu.
+
+**4. Then show what they didn't mention.** Now the candidates, framed as a gap-check rather
+than a ranking — what's live that they didn't raise, and what it would cost. This is where
+reading their sources pays off, and where the divergence goes:
+
+> The board has the deadline thread at 27 days. It hasn't been opened in 12.
+> Which one's wrong, the plan or the week?
+
+State it once. Don't repeat it later in the session, and don't moralise. If their sources and
+their attention agree, say nothing — most days there is nothing here.
+
+**5. They choose. You transcribe.** The thinking is theirs, and it is the thing worth
+protecting — the reason to keep a task file by hand is that it requires mental use. What
+moves to Claude is the typing, not the deciding.
+
+The structural guard is the **bench**: show what didn't make the cut and *why it lost*. Three
+things winning only means something if the losers are visible.
+
+**6. Write it.** Format in `references/plan-format.md`. Three to four items, each with a
+starting gate. Three or four benched, each with its reason.
+
+## Gates are starting gates
+
+This is the part most likely to be got wrong, so here is the reasoning rather than a rule.
+
+The obvious design is a completion gate — *done when the feature works*. It aims at the wrong
+moment. Abandonment happens in the first twenty minutes, when a task turns uncomfortable and
+something else looks more interesting. A completion gate cannot see that; it arrives hours
+later and reports what they already know.
+
+A starting gate proves the work was **started and engaged with**. It is achievable inside the
+session that set it, so the first win lands before the drift window opens.
+
+Two constraints make it work:
+
+**It must be checkable without a judgement call.** Either an artifact exists, or a time box
+was spent. Never "made good progress" — that is an opinion, and assessing the quality of
+someone's work is not this skill's job.
+
+**It must be the smallest thing that cannot be done without actually engaging.** Cloning a
+repo is theatre. Writing the first function signature is not. Opening a paper is theatre;
+writing one line about what it said is not.
+
+Gates get revised once they're inside the task and know what it involves — expected, not a
+miss. For items being done *with Claude*, that revision happens naturally in the working
+session. For solo items, they revise it themselves or it waits for clock-out. Don't introduce
+a mid-day check-in to catch this; the quiet day is deliberate.
+
+For genuinely straightforward tasks, several confident gates up front are fine.
+
+## Handing over mid-day
+
+A day usually spans several sessions — context runs out long before the work does. The plan
+survives that boundary because it lives in a file; **the reasoning does not.** Revised gates,
+swapped items, what actually got finished and what the work taught them exist only in the
+session that is about to end.
+
+So there is a third verb. When the user says **hand over** — or says they are about to start a
+fresh session while the day is still running — append a short state line under the dated
+heading, and stop:
+
+> *Handed over 14:20 — items 1 and 2 done; gate on 2 revised (the file already existed, so the
+> gate became "first new function signature"). In flight: the install, nothing written yet.
+> Next: finish it, then sport.*
+
+Three things, no more: what is done, what is in flight, what is next.
+
+**This is not a clock-out.** Don't touch the week's record or the accumulating log, don't ask
+the clock-out question, and don't write a reckoning. The day is still running, and a day
+reckoned twice is a day recorded wrong. The next session reads the dated section and picks up
+mid-stride.
+
+**The user triggers this, not you.** They can see a context limit approaching; you generally
+cannot. Offering to hand over on a hunch is exactly the overhead this skill must not become.
+
+## Clock out
+
+Short. Check the actual time first, for the same reason as at clock-in. Then record what
+happened — **asking what happened rather than inferring it**, since most of a day is
+invisible from inside one session — and ask **one** question, only when there is one worth
+asking:
+
+> What did today teach you about the plan?
+
+Not *why didn't you finish*. The difference is accuracy, not politeness. A plan that changed
+because the work taught them something is the plan working, and only this framing tells that
+apart from drift. It also gets the honest answer in their words — "I got interested in
+something else" is a real reply to that question, and them saying it beats you pointing it out.
+
+If the day went to plan, say so and write it down. No question needed.
+
+Then record the plan-versus-actual somewhere that accumulates. That running record is the
+only evidence of whether this skill is working at all — without it, any claim that it helps
+is self-certified.
+
+**A missed clock-out is reckoned by the next morning's clock-in**: one question about
+yesterday, then today's plan. Never chase them in the evening — there is no reliable signal
+that a day has ended, and guessing wrong is exactly the overhead this must not become.
+
+## What this skill will not do
+
+- **Decide their day.** It interviews, shows the cost, and transcribes. They choose.
+- **Judge whether the work was good.** Gates are checkable facts, not assessments.
+- **Cross a project boundary.** Where a project governs its own records, plan the block —
+  "2h on the training script" — never write that project's findings or decisions elsewhere.
+- **Fire without asking.** It offers. It never activates itself.
+- **Nag.** One offer per session, dropped on a no.
+- **Insist on a plan.** "Nothing today" is a legitimate answer.
